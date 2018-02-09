@@ -42,12 +42,17 @@ int main()
 	case AAS:
         std::cout << "Enter two angles and a side" << std::endl;
 		std::cin >> angle1 >> angle2 >> side1;
-		std::cout << "side2=" << side1 / sin(angle1) << "side3=" << side2 / sin(angle2) << std::endl; 
+		std::cout << "angle3=" << 180 - (angle1 + angle2) << "side2=" << side1 / sin ( angle1 ) * sin (angle2 ) << "side3=" << side2 / sin(angle2) << std::endl;
 		if (180 <= angle1 + angle2)
 			std::cout << "Problem is unsolvable" << std::endl;
 		   break;
 
-	default : 
+	case ASA:
+		std::cout << "Enter two sides and an angle" << std::endl;
+		std::cin >> side1 >> side2 >> angle1;
+		std::cout << "side3=" << 
+
+	default: 
 		std::cout << "invalid option try agian" << std::endl;
 		break;
 	}
