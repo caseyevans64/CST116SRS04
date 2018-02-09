@@ -61,8 +61,8 @@ int main()
 		std::cout << "Enter side, angle then side" << std::endl;
 		std::cin >> side1 >> angle3 >> side2;
 		std::cout << "side3=" << sqrt(side1*side1 + side2 * side2 - 2 * side1*side2*(cos(angle3)) *3.14 / 180) << std::endl;
-		std::cout << "angle1=" << (asin(sin(angle3) *3.14 / 180) * side1 / side3) << std::endl;
-		std::cout << "angle2=" << 180 - (angle3 + (asin(sin(angle3) *3.14 / 180) * side1 / side3)) << std::endl;
+		std::cout << "angle1=" << ( asin (sin(angle3*3.14 / 180)) * side1 / side3) << std::endl;
+		std::cout << "angle2=" << 180 - (angle3 + (asin(sin(angle3 *3.14 / 180)) * side1 / side3)) << std::endl;
 
 	case SSA:
 		std::cout << "Enter side, side, and then angle" << std::endl;
@@ -72,6 +72,9 @@ int main()
 		std::cout << "side1=" << sin( 180 - (angle2 + (asin (sin(side3))*3.14 / 180) * (sin(angle2)))*3.14 / 180) * side2 / (asin(sin(side3)*3.14 / 180) * (sin(angle2)*3.14 / 180) / side2) << std::endl;
 
 	case SSS:
+		std::cout << "Enter side, side, and side" << std::endl;
+		std::cin >> side1 >> side2 >> side3;
+		std::cout << "angle1=" << ( acos ( side1*side1 + side2*side2 + side3*side3))
 
 
 
