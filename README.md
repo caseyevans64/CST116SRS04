@@ -2,7 +2,7 @@
 Triangle
 
 
-Class ID: 
+Class ID: Eevee
 
 SRS ID: CST116SRS04
 
